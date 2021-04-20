@@ -1,0 +1,12 @@
+public class Variable {
+    public static void main(String[] args) {
+    private byte cpu cores = 8;
+    private short numberOfVideoCards = 2;
+    private int numberOfMonitors = 2;
+    private long numberOfFolders = 1000000;
+    private float cpuFrequency = 3.9;
+    private double computerCoast = 1500.5;
+    private char[] brand = new char['R', 'y', 'z', 'e', 'n'];
+    private boolean myPC = true;
+    }
+}
