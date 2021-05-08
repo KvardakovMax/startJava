@@ -1,36 +1,33 @@
-public class calculator {
+public class Calculator {
     public static void main(String[] args) {
-        String symbol = "%";
+        String mathOperation = "%";
         int a = -5;
         int b = 3;
         int result = 0;
-        int resultOfExponentiation = 1;
         if(a >= 0 && b >= 0) {
-            if (symbol == "+") {
+            if (mathOperation == "+") {
                 result = a + b;
                 System.out.println("Итог сложения = " + result);
-            }
-            if (symbol == "-") {
+            } else if (mathOperation == "-") {
                 result = a - b;
                 System.out.println("Итог вычитания = " + result);
-            }
-            if (symbol == "*") {
+            } else if (mathOperation == "*") {
                 result = a * b;
                 System.out.println("Итог умножения = " + result);
-            }
-            if (symbol == "/") {
+            } else if (mathOperation == "/") {
                 result = a / b;
                 System.out.println("Итог деления = " + result);
-            }
-            if (symbol == "^") {
+            } else if (mathOperation == "^") {
+                result = 1;
                 for (int i = 1; i <= b; i++) {
-                    resultOfExponentiation *= a;
+                    result *= a;
                 }
-                System.out.println("Итог возведения в степень = " + resultOfExponentiation);
-            }
-            if (symbol == "%") {
+                System.out.println("Итог возведения в степень = " + result);
+            } else if (mathOperation == "%") {
                 result = a % b;
                 System.out.println("Остаток = " + result);
+            } else {
+                System.out.println("Данная операция не поддерживается");
             }
         } else {
             System.out.println("Ошибка! Числа < 0");
