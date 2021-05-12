@@ -6,18 +6,17 @@ public class Person {
     int age = 20;
 
     public void go() {
-
     }
+
     public void sit() {
-
     }
+
     public void run() {
-
     }
+
     public void say() {
-
     }
-    public void learnJava() {
 
+    public void learnJava() {
     }
 }
