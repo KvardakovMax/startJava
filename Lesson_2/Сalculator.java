@@ -1,33 +1,27 @@
 public class Calculator {
-    static int result;
-    public static void what(int a, String mathOperation, int b) {
-        switch(mathOperation) {
+    public static void calculate(int a, String sign, int b) {
+        switch(sign) {
             case "+":
-                result = a + b;
-                System.out.println(result);
+                System.out.println(a + b);
                 break;
             case "-":
-                result = a - b;
-                System.out.println(result);
+                System.out.println(a - b);
                 break;
             case "*":
-                result = a * b;
-                System.out.println(result);
+                System.out.println(a * b);
                 break;
             case "/":
-                result = a / b;
-                System.out.println(result);
+                System.out.println(a / b);
                 break;
             case "^":
-                result = 1;
+                int result = 1;
                 for (int i = 1; i <= b; i++) {
                     result *= a;
                 }
                 System.out.println(result);
                 break;
             case "%":
-                result = a % b;
-                System.out.println(result);
+                System.out.println(a % b);
                 break;
             default:
                 System.out.println("Ошибка");
