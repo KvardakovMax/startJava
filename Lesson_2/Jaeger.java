@@ -1,5 +1,5 @@
 public class Jaeger {
-        private String modelName;
+    private String modelName;
     private String mark;
     private String origin;
     private String weapon;
@@ -31,16 +31,25 @@ public class Jaeger {
 
     public void setChooseWeapon(String weapon) {
         this.weapon = weapon;
+    }
+
+    public void getChooseWeapon() {
         System.out.println(weapon);
     }
 
-    public void setSayWhenYouWereLaunched (String yearOfLaunched) {
+    public void setSayWhenYouWereLaunched(String yearOfLaunched) {
         this.yearOfLaunched = yearOfLaunched;
+    }
+
+    public void getSayWhenYouWereLaunched() {
         System.out.println(yearOfLaunched);
     }
 
     public void setModelName(String modelName) {
         this.modelName = modelName;
+    }
+
+    public void getModelName() {
         System.out.println(modelName);
     }
     
@@ -56,11 +65,14 @@ public class Jaeger {
 
     public void setHeight(float height) {
         this.height = height;
+    }
+
+    public void getHeight() {
         System.out.println("Высота: " + height);
     }
 
     public void setWeight(float weight) {
-        this.weight =weight;
+        this.weight = weight;
         System.out.println(weight);
     }
     

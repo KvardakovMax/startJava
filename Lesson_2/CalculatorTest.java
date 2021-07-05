@@ -32,7 +32,7 @@ public class CalculatorTest {
                 System.out.println("End");
                 break;
             }
-            System.out.println("Введите корректный ответ: yes/no")
+            System.out.println("Введите корректный ответ: yes/no");
             answer = in.nextLine();
         }
     }

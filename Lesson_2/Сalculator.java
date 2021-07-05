@@ -1,5 +1,5 @@
 public class Calculator {
-    public static void calculate(int a, String sign, int b) {
+    public void calculate(int a, String sign, int b) {
         switch(sign) {
             case "+":
                 System.out.println(a + b);
