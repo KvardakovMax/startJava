@@ -1,6 +1,11 @@
 public class Player {
-   String name;
-    public Player(String name) {
-        this.name = name;
+   private String name;
+
+   public Player(String name) {
+      this.name = name;
+   }
+
+   public void getName() {
+      System.out.println(name);
     }
 }
