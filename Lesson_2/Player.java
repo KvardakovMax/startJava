@@ -2,14 +2,14 @@ public class Player {
    private String name;
 
    public Player(String name) {
-        this.name = name;
-    }
+      this.name = name;
+   }
 
    public String getName() {
-        return name;
-    }
+      return name;
+   }
 
    public void playerName() {
-        System.out.println(getName());
+      System.out.println(getName());
    }
 }
