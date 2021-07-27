@@ -1,7 +1,9 @@
+import java.util.Scanner;
+
 public class GuessNumber {
     private Player player1;
     private Player player2;
-    private double pcNumber;
+    private double targetNumber;
     private double player1Number;
     private double player2Number;
 
@@ -12,33 +14,31 @@ public class GuessNumber {
 
     public void start() {
         Scanner in = new Scanner(System.in);
-        pcNumber = Math.round(Math.random() * 100);
+        targetNumber = Math.round(Math.random() * 101);
 
         while (true) {
-            player1.getName();
+            player1.playerName();
             System.out.println("Угадай число:");
             player1Number = in.nextDouble();
-            if (player1Number > pcNumber) {
-                System.out.println("Компьютер загадал число меньще");
-            }
-            if (player1Number < pcNumber) {
+            if (player1Number > targetNumber) {
+                System.out.println("Компьютер загадал число меньше");
+            } else if (player1Number < targetNumber) {
                 System.out.println("Компьютер загадал число больше");
-            }
-            if (player1Number == pcNumber) {
+            } else {
                 System.out.println("WIN");
                 break;
             }
 
-            player2.getName();
+            player2.playerName();
             System.out.println("Угадай число:");
             player2Number = in.nextDouble();
-            if (player2Number > pcNumber) {
-                System.out.println("Компьютер загадал число меньще");
+            if (player2Number > targetNumber) {
+                System.out.println("Компьютер загадал число меньше");
             }
-            if (player2Number < pcNumber) {
+            if (player2Number < targetNumber) {
                 System.out.println("Компьютер загадал число больше");
             }
-            if (player2Number == pcNumber) {
+            if (player2Number == targetNumber) {
                 System.out.println("WIN");
                 break;
             }
