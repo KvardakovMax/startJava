@@ -4,8 +4,6 @@ public class GuessNumberTest {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String answer = "yes";
-
-
         System.out.println("Игрок 1, введите свой ник: ");
         String player1Name = in.nextLine();
         Player player1 = new Player(player1Name);
@@ -16,22 +14,18 @@ public class GuessNumberTest {
 
         GuessNumber game = new GuessNumber(player1, player2);
 
-        while (answer.equals("yes")) {
+         while (answer.equals("yes")) {
             game.start();
 
             System.out.println("Хотите продолжить игру? [yes/no]: ");
             answer = in.nextLine();
-        }
-        while (answer.equals("no")) {
-            System.out.println("END");
-        }
-        while (!answer.equals("yes") || !answer.equals("no")) {
-            System.out.println("Хотите продолжить игру? [yes/no]: ");
-            answer = in.nextLine();
-        }
 
-
-
+            while (!answer.equals("yes") || !answer.equals("no")) {
+                System.out.println("Хотите продолжить игру? [yes/no]: ");
+                answer = in.nextLine();
+            }
+        }
+        System.out.println("END");
 
         /*while (true) {
             System.out.println("Хотите продолжить игру? [yes/no]: ");
